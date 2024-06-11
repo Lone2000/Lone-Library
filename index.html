@@ -10,28 +10,38 @@
     
     <div class="main">
         <h1>Lone Library</h1>
-        <div id="gallery">
-            <div class="card">
-                <img src="" alt="">
-                <h2>Title</h2>
-                <h3>Author</h3>
-                <h4>release year</h4>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h2>Title</h2>
-                <h3>Author</h3>
-                <h4>release year</h4>
-            </div>
-            <div class="card">
-                <img src="" alt="">
-                <h2>Title</h2>
-                <h3>Author</h3>
-                <h4>release year</h4>
-            </div>
+        <div id="gallery"></div>
+        <div id="form_container">
+            <form>
+                <p>
+                    <label>Title</label>
+                    <input type="text" id="title">
+                </p>
+                <p>
+                    <label>Author</label>
+                    <input type="text" id="author">
+                </p>
+                <p>
+                    <label>Release Year</label>
+                    <input type="text" id="year">
+                </p>
+                <p>
+                    <label>Serial Number</label>
+                    <input type="text" id="srn">
+                </p>
+                <p>
+                    <label>Image Url</label>
+                    <input type="text" id="img_url">
+                </p>
+                <button type="submit">Submit</button>
+            </form>
         </div>
+        <button class="add_book">Add Book</button>
     </div>
-
+    
+      
+    
+    
     <script src="script.js"></script>
 </body>
 </html>

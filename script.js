@@ -22,6 +22,8 @@ const myLibrary = [
     }
 ];
 
+let gallery = document.querySelector("#gallery");
+
 
 function Book(title,author,year,srn,img_url){
     // The Constructor
@@ -37,9 +39,20 @@ let newBook = new Book("Harry Potter", 'JK.Rolling', 2000, 39343434, 'Http.pp.co
 function addBookToLibrary(){
     // Iterate over the mylibary object first
     myLibrary.forEach((book) => {
-        console.log(book);
+        let elm = document.createElement("div");
+        elm.classList.add("card");
+
+        elm.innerHTML =  `
+        <h2>${book.title}</h2>
+        <p>${book.author}</p>
+        <p>${book.year}</p>
+        <img src="" alt="Image description">
+        `
+        
+        gallery.appendChild(elm);
     })
 }
 
 
 addBookToLibrary();
+console.log(gallery.children);
